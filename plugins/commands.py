@@ -19,11 +19,8 @@ async def start(bot, cmd):
 				[
 					InlineKeyboardButton("🔮Help", callback_data='help_cb'),
 					InlineKeyboardButton("⚔About", callback_data='about_cb')
-				],
-				[
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-					InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
 				]
+				
 			]
 		)
 	)
@@ -39,11 +36,8 @@ async def help(bot, cmd):
 				[
 					InlineKeyboardButton("⚔About", callback_data='about_cb'),
 					InlineKeyboardButton("⚡Back", callback_data='start_cb')
-				],
-				[
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-					InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
 				]
+				
 			]
 		)
 	)
@@ -58,11 +52,8 @@ async def about(bot, cmd):
 				[
 					InlineKeyboardButton("🔮Help", callback_data='help_cb'),
 					InlineKeyboardButton("⚡Back", callback_data='start_cb')
-				],
-				[
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/kinu6'),
-					InlineKeyboardButton("⚙️Update Channel", url="https://t.me/TMWAD")
 				]
+				
 			]
 		)
 	)
