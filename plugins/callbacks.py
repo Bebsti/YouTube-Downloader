@@ -102,7 +102,7 @@ async def download(client, callback_query):
     title = youtube.title
     thumbnail_url = youtube.thumbnail_url
     description = youtube.description
-    formatted_text = f"<b>{title}</b>\n\n{description[:300]}{'...' if len(description) > 300 else ''} \n\n<b>Powerd By: @TMWAD With <a href='https://t.me/videoDefUserBot''>@videoDefUserBot</a></b>."
+    formatted_text = f"<b>{title}</b>\n\n{description[:300]}{'...' if len(description) > 300 else ''} \n\n<b>Powerd By: @world_wide_movies</b>."
     # Get a list of all streams for the video
     # Replace | with -
     file_name = f"{youtube.title} - {youtube.author}".replace("|", "-")
@@ -306,7 +306,7 @@ async def pl_download(client, callback_query):
     playlist_url = f"https://youtube.com/playlist?list={playlist_id}"
     playlist = Playlist(playlist_url)
     playlist_title = playlist.title
-    final_text = f"Playlist <b>{playlist_title}</b> has been downloaded and uploaded! \n\n<b>Powerd By: @TMWAD With <a href='https://t.me/videoDefUserBot''>@videoDefUserBot</a></b>."
+    final_text = f"Playlist <b>{playlist_title}</b> has been downloaded and uploaded! \n\n<b>Powerd By:  @world_wide_movies</b>."
 
     try:
         for video in playlist.videos:
@@ -360,12 +360,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⚡Back", callback_data='start_cb')
             ],
             [
-                InlineKeyboardButton(
-                    "👨🏼‍💻Developer", url='https://t.me/kinu6'),
-                InlineKeyboardButton("⚙️Update Channel",
-                                     url="https://t.me/TMWAD")
-            ],
-            [
                 InlineKeyboardButton("🧿Close", callback_data='close')
             ]
         ]
@@ -383,12 +377,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⚡Back", callback_data='start_cb')
             ],
             [
-                InlineKeyboardButton(
-                    "👨🏼‍💻Developer", url='https://t.me/kinu6'),
-                InlineKeyboardButton("⚙️Update Channel",
-                                     url="https://t.me/TMWAD")
-            ],
-            [
                 InlineKeyboardButton("🧿Close", callback_data='close')
             ]
         ]
@@ -404,12 +392,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [
                 InlineKeyboardButton("🔮Help", callback_data='help_cb'),
                 InlineKeyboardButton("⚔About", callback_data='about_cb')
-            ],
-            [
-                InlineKeyboardButton(
-                    "👨🏼‍💻Developer", url='https://t.me/kinu6'),
-                InlineKeyboardButton("⚙️Update Channel",
-                                     url="https://t.me/TMWAD")
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
